@@ -10,7 +10,7 @@ from pdf import extract_pdf_text
 key = os.getenv('GOOGLE_API_KEY')
 
 genai.configure(api_key=key)
-model = genai.GenerativeModel('models/gemini-2.5-lite')
+model = genai.GenerativeModel('models/gemini-2.5-flash-lite')
 
 def analyze_resume(pdf_doc,job_des):
     if pdf_doc is not None:
